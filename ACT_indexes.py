@@ -73,51 +73,51 @@ def get_instrument_keywords(obs_name):
     }
 
     HARPS_dictionary = {
-               'intrument_name' : 'HARPS-N',
-               'deg_ll'  :   'HIERARCH TNG DRS CAL TH DEG LL',
+               'intrument_name' : 'HARPS',
+               'deg_ll'  :   'HIERARCH ESO DRS CAL TH DEG LL',
                'naxis1' : 'NAXIS1',
                'naxis2' : 'NAXIS2',
-               'sigdet' : 'HIERARCH TNG DRS CCD SIGDET',
-               'gain'   : 'HIERARCH TNG DRS CCD CONAD',
-               'coeff_ll': 'HIERARCH TNG DRS CAL TH COEFF LL',
-               'blaze': 'HIERARCH TNG DRS BLAZE FILE',
+               'sigdet' : 'HIERARCH ESO DRS CCD SIGDET',
+               'gain'   : 'HIERARCH ESO DRS CCD CONAD',
+               'coeff_ll': 'HIERARCH ESO DRS CAL TH COEFF LL',
+               'blaze': 'HIERARCH ESO DRS BLAZE FILE',
 
-                'bjd' : 'HIERARCH TNG DRS BJD',
-                'berv': 'HIERARCH TNG DRS BERV',
-                'rv'  : 'HIERARCH TNG DRS CCF RVC',
-                'rvn' : 'HIERARCH TNG DRS CCF NOISE',
+                'bjd' : 'HIERARCH ESO DRS BJD',
+                'berv': 'HIERARCH ESO DRS BERV',
+                'rv'  : 'HIERARCH ESO DRS CCF RVC',
+                'rvn' : 'HIERARCH ESO DRS CCF NOISE',
 
-                'CaII_K': [3933.664, 1.0900, ], #order in Python standard
-                'CaII_H': [3968.470, 1.0900, ],
-                'CaII_V': [3901.070, 10.000, ],
-                'CaII_R': [4001.070, 10.000, ],
+                'CaII_K': [3933.664, 1.0900, 5], #order in Python standard
+                'CaII_H': [3968.470, 1.0900, 7],
+                'CaII_V': [3901.070, 10.000, 4],
+                'CaII_R': [4001.070, 10.000, 8],
 
                 ## Halpha Central
                 ## Central wavelength at 6562.828 (Gomez da Silva 2011+, Robertson 2013a+)
-                'Halpha_cent': [6562.808, 0.8000, ],
+                'Halpha_cent': [6562.808, 0.8000, 67],
                 # first continuum window in the range [-700:-300] km/s, as in Robertson 2013a+, Kurster
-                'Halpha_Lcont': [6550.887, 5.3750, ],
-                'Halpha_Rcont': [6580.310, 4.3782, ],
+                'Halpha_Lcont': [6550.887, 5.3750, 67],
+                'Halpha_Rcont': [6580.310, 4.3782, 67],
 
                 ## Halpha Central with half-size window
                 ## Central wavelength at 6562.828 (Gomez da Silva 2011+, Robertson 2013a+)
-                'Halpha_half': [6562.808, 0.4000, ],
+                'Halpha_half': [6562.808, 0.4000, 67],
 
                 ############### CaI activity-less index
                 ## CaI "quiet" index (Kurster 2003+, Robertson 2013a+)
-                'CaI_cent': [6572.795, 0.3400, ], #order in Python standard
+                'CaI_cent': [6572.795, 0.3400, 67], #order in Python standard
                 # first continuum window in the range [-700:-300] km/s, as in Robertson 2013a+, Kurster
-                'CaI_Lcont': [6550.887, 5.3750, ],
-                'CaI_Rcont': [6580.310, 4.3782, ],
+                'CaI_Lcont': [6550.887, 5.3750, 67],
+                'CaI_Rcont': [6580.310, 4.3782, 67],
 
 
                 ############### NaI D alt
                 ## Alternative approach to obtain Na I D1 & D2 lines
                 ## check the disclaimer
-                'NaI_D1': [5895.920, 0.2500, ], #order in Python standard
-                'NaI_D2': [5889.950, 0.2500, ],
-                'NaI_Lcont': [5805.000, 5.0000, ],
-                'NaI_Rcont': [6090.000, 10.000, ],
+                'NaI_D1': [5895.920, 0.2500, 56], #order in Python standard
+                'NaI_D2': [5889.950, 0.2500, 56],
+                'NaI_Lcont': [5805.000, 5.0000, 55],
+                'NaI_Rcont': [6090.000, 10.000, 59],  #vicino al bordo
 
                 ############### NaI D
                 ## NaID computation
@@ -126,9 +126,9 @@ def get_instrument_keywords(obs_name):
                 ## it uses the highest 10 instead on the flux
 
 
-                'HeI_cent'   : [5875.620, 0.200, ], #order in Python standard
-                'HeI_Lcont'  : [5869.000, 2.500, ],
-                'HeI_Rcont'  : [5881.000, 2.500, ],
+                'HeI_cent'   : [5875.620, 0.200, 56], #order in Python standard
+                'HeI_Lcont'  : [5869.000, 2.500, 56],
+                'HeI_Rcont'  : [5881.000, 2.500, 56],
 
     }
 
